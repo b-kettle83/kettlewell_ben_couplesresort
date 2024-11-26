@@ -4,16 +4,29 @@ Couples Resort Responsive Build
  */
 
 /* 
-    CSS Guide 
+   CSS Guide 
 
-    1.  General Styles
-    2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer 
+   1.  General Styles
+   2.  Main Nav
+   3.  Footer 
+
+   A. Homepage
+   1.  Main Hero Image
+   2.  Main Hero Image Contact
+   3.  Why Couples Resort
+   4.  About & FAQ
+   5.  Contact Form
+
+   B. Spa Mobile
+
+   C. Spa Desktop
+   1. Main Nav
+   2. Main Hero Image
+   3. Preparations
+   4. Packages
+   5. Products
+   6. Footer
+
  */
 
 
@@ -29,11 +42,12 @@ Couples Resort Responsive Build
 body {
    color: #626262;
    font-family: 'Sanchez', 'Times New Roman', serif;
+   margin: 0px;
+   padding: 0px;
 }
 
 a {
    text-decoration: none;
-   /* add */
 }
 
 input, textarea {
@@ -42,10 +56,14 @@ input, textarea {
    padding: 0;
 }
 
+span {
+   color: #9a2018;
+   font-size: 12px;
+}
+
 .cr-red {
    color: #9a2018;
 }
-
 
 /* 2. ---Main Nav--- */
 
@@ -72,17 +90,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
    display:block;
 }
 
-
-
-/*   ~ sibling selector   */
-
-
-
-
-   /* add */
-
-
-   #main-nav ul {
+#main-nav ul {
    list-style: none;
    padding: 0;
    margin: 0;
@@ -107,17 +115,44 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin-bottom: 40px;
 }
 
-   /* add */
-
-
-
 #logo {
    margin-bottom: 20px;
    max-width: 382px;
 }
 
+/* 3. ---Footer--- */
 
-/* 3. ---Main Hero Image--- */
+#footer-hero {
+   background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+   color: #fff;
+   font-size: 12px;
+   margin-top: 40px;
+   padding-bottom: 80px;
+}
+
+#footer-hero h3 {
+   margin-top: 30px;
+   font-size: 28px;
+   margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+   font-size: 23px;
+}
+
+#footer-contact-info p {
+   margin-bottom: 20px;
+   line-height: 18px;
+   font-size: 11px;
+}
+
+/* A. ------Homepage------ */
+/* 1. ---Main Hero Image--- */
 
 #hero {
    background: url(../images/hero-main.jpg) no-repeat;
@@ -133,7 +168,6 @@ so what this line is doing is when the main-nav input is checked, this style aff
    justify-content: center;
    align-items: center;
    font-style: italic;
-      /* add */
    cursor: pointer;
 }
 
@@ -150,7 +184,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
 }
 
 .hero-img-h2, .hero-img-h3 {
-   background: #fff;
+   background: #ffffff;
    padding: 10px 15px;
    font-size: 14px;
 }
@@ -172,7 +206,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin-bottom: 20px;
 }
 
-/* 4. ---Main Hero Image Contact--- */
+/* 2. ---Main Hero Image Contact--- */
 
 .fas {
    font-size: 42px;
@@ -198,7 +232,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
    padding-bottom: 30px;
 }
 
-/* 5. ---Why Choose Us--- */
+/* 3. ---Why Choose Us--- */
 
 
  #why-choose-us-nav {
@@ -278,7 +312,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
 }
 
 
-/* 6. ---About & FAQ--- */
+/* 4. ---About & FAQ--- */
 
 #about-hero-con {
    background: url(../images/about-us-hero.jpg) no-repeat;
@@ -350,7 +384,7 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin-bottom: 20px;
 }
 
-/* 7. ---Contact--- */
+/* 5. ---Contact--- */
 
 #contact-hero-con {
    background: url(../images/contact-hero.jpg);
@@ -407,33 +441,225 @@ so what this line is doing is when the main-nav input is checked, this style aff
    align-self: flex-end;
 }
 
-/* 8. ---Footer--- */
+/* C. Spa Desktop */
+/* 1. General Styles */
 
-#footer-hero {
-   background-image: url(../images/footer.jpg);
-	background-repeat: no-repeat;
-   color: #fff;
+#desk span {
+   font-size: 14px;
+}
+
+#desk h3 {
+   padding: 10px;
+   padding-left: 25px;
+   font-size: 24px;
+}
+
+.desk-small-par {
+   font-size: 16px;
+}
+
+.desk-large-par {
+   font-size: 20px;
+}
+
+.desk-footnote {
    font-size: 12px;
-   margin-top: 40px;
-   padding-bottom: 80px;
+   font-style: italic;
 }
 
-#footer-hero h3 {
-   margin-top: 30px;
-   font-size: 28px;
-   margin-bottom: 16px;
+.desk-heading-box {
+   background-color: white;
+   align-self: last baseline;
 }
 
-#footer-privacy .line-seperator {
-   margin-top: 0px;
+/* 1. --Main Header-- */
+
+#desk-main-header {
+   align-items: center;
 }
 
-#footer-contact-info h3 {
-   font-size: 23px;
+#desk-main-nav ul {
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
 }
 
-#footer-contact-info p {
+#desk-main-nav ul li a {
+   display: block;
+   padding: 10px 0px 10px 0;
+   text-align: center;
+   color: #626262;
+}
+
+#desk-main-header-booknow {
+   text-align: center;
+   align-items: center;
+   font-size: 24px;
+   font-style: italic;
+   color:white;
+   background-color: #9a2018;
+   padding: 35px 10px;
+}
+
+/* 2. --Main Hero-- */
+
+#desk-main-hero {
+   background-image: url(../images/desk_spa_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 450px;
+}
+
+#desk-hero-info {
+   padding-top: 45px;
+}
+
+#desk-hero-info p {
    margin-bottom: 20px;
-   line-height: 18px;
-   font-size: 11px;
+}
+
+/* 3. Preparations */
+
+#desk-sect1-hero {
+   background-image: url(../images/desk_spa_sect1-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 450px;
+   width: 1200px;
+   margin-top: 15px;
+}
+
+#desk-sect1-info {
+   padding-top: 45px;
+}
+
+#desk-sect1-info p {
+   margin-bottom: 30px;
+   padding: 0px 10px 0px 10px;
+}
+
+/* 4. Packages */
+
+#desk-sect2-hero {
+   background-image: url(../images/desk_spa_sect2-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 450px;
+   margin-top: 15px;
+}
+
+#desk-sect2-info {
+   padding-top: 45px;
+}
+
+#desk-sect2-info p {
+   margin-bottom: 30px;
+}
+
+#desk-packages {
+   padding-top: 35px;
+}
+
+.desk-package-option {
+   text-align: center;
+   margin-bottom: 50px;
+   font-size: 24px;
+}
+
+#desk-sauna-info {
+   margin-top: 55px;
+}
+
+/* 5. Products */
+
+#desk-sect3-hero {
+   background-image: url(../images/desk_spa_sect3-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 450px;
+   margin-top: 65px;
+}
+
+#desk-sect3-info {
+   padding-top: 40px;
+}
+
+#desk-products-badges {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 65px;
+}
+
+/* 6. Footer */
+
+#desk-footer {
+   background-image: url(../images/desk_footer.jpg);
+   background-repeat: no-repeat;
+   background-blend-mode: darken;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+   height: 450px;
+   margin-top: 50px;
+}
+
+#desk-footer-top {
+   display: flex;
+}
+
+#desk-footer-info {
+   align-self: last baseline;
+}
+
+#desk-footer-nav {
+   align-self: last center;
+}
+
+#desk-footer-info h3 {
+   font-weight: normal;
+   font-size: 24px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#desk-footer-info p {
+   font-size: 12px;
+   line-height: 25px;
+}
+
+#desk-footer-nav {
+   display: flex;
+   height: 105px;
+}
+
+#desk-footer-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#desk-footer-nav li a {
+   display: block;
+   padding: 10px 0;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+#desk-footer-links {
+   display: flex;
+}
+
+#desk-footer-links div {
+   margin-right: 20px;
+}
+
+#desk-footer-book-now {
+   align-self: last center;
+   text-align: center;
+   font-size: 24px;
+   font-style: italic;
+   background-color: #9a2018;
+   padding: 40px 10px;
+   border-radius: 5px;
+   margin-bottom: 50px;
+}
+
+#desk-footer-legal p {
+   padding-top: 60px;
+   font-size: 10px;
+   text-align: center;
 }
