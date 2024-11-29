@@ -27,7 +27,7 @@ body, p, h1, h2, h3, h4, h5 {
    display: grid;
    grid-template-columns: repeat(12, 79px);
    column-gap: 20px;
-   max-width: 1170px;
+   max-width: 1200px;
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;

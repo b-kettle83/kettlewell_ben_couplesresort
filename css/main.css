@@ -32,6 +32,12 @@ Couples Resort Responsive Build
    5. Products
    6. Footer
 
+   D. Activities
+   1. Main Hero Image
+   2. Main Activities
+   3. Algonquin Park
+   4. Galeairy Lake
+
  */
 
 
@@ -201,6 +207,7 @@ span {
 
 #footer-contact-info h3 {
    font-size: 23px;
+   padding: 0;
 }
 
 #footer-contact-info p {
@@ -587,7 +594,7 @@ span {
 }
 
 .desk-footnote {
-   font-size: 12px;
+   font-size: 10px;
    font-style: italic;
 }
 
@@ -787,3 +794,78 @@ span {
    font-size: 10px;
    text-align: center;
 }
+
+/* D. Activities */
+/* 1. Main Hero */
+
+#act-main-hero {
+   background-image: url(../images/mob_act_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#act-hero-info p {
+   padding-top: 10px;
+}
+
+.act-activity-box summary {
+   background-color: #e2e2e2;
+   padding: 10px;
+   font-size: 21px;
+}
+
+.act-activity-menu {
+   margin-top: 20px;
+}
+
+.act-activity-menu h3 {
+   font-size: 20px;
+   font-weight: bolder;
+   padding: 0;
+   margin-bottom: 10px;
+}
+
+.learn-more {
+   color: white;
+   background-color: #CF6666;
+   padding: 10px;
+   border-radius: 10px;
+   font-style: italic;
+   width: 100px;
+   align-self: center;
+}
+
+.act-activity-box img {
+   margin: auto;
+}
+
+#act-sect1-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_act_sect-1_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#act-sect1-info p {
+   padding-top: 10px;
+}
+
+#act-museum-info {
+   margin-top: 40px;
+}
+
+#act-museum-info p {
+   margin-top: 35px;
+}
+
+#act-sect2-hero {
+   margin-top: 25px;
+   background-image: url(../images/mob_act_sect-2_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#act-sect2-info p {
+   padding-top: 10px;
+}
+
