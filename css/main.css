@@ -6,14 +6,23 @@ Couples Resort Responsive Build
 /* 
     CSS Guide 
 
-    1.  General Styles
-    2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer 
+   1.  General Styles
+   2.  Footer 
+   3.  Main Nav
+
+   A.  Homepage
+   1.  Main Hero Image
+   2.  Main Hero Image Contact
+   3.  Why Couples Resort
+   4.  About & FAQ
+   5.  Contact Form
+
+   B. Spa Mobile
+   1. Main Hero Image
+   2. Preparations
+   3. Packages
+   4. Products
+ 
  */
 
 
@@ -33,7 +42,27 @@ body {
 
 a {
    text-decoration: none;
-   /* add */
+}
+
+h3 {
+   padding: 5px;
+   padding-left: 15px;
+   font-size: 21px;
+}
+
+span {
+   font-size: 14px;
+   color: #9a2018;
+}
+
+#mob p {
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+.mob-footnote {
+   font-size: 10px;
+   font-style: italic;
 }
 
 input, textarea {
@@ -46,6 +75,16 @@ input, textarea {
    color: #9a2018;
 }
 
+.mob-heading-box {
+   background-color: white;
+   align-self: last baseline;
+}
+
+.line-separator {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+}
 
 /* 2. ---Main Nav--- */
 
@@ -66,33 +105,30 @@ input, textarea {
    transform: rotate(90deg);
 }
 
-/* The ~ is a sibling selector. When two elements are on the same level in a parent container, they are siblings,
-so what this line is doing is when the main-nav input is checked, this style affects the sibling burger-con*/
 #main-nav input:checked ~ #burger-con {
    display:block;
 }
 
-
-
-/*   ~ sibling selector   */
-
-
-
-
-   /* add */
-
-
-   #main-nav ul {
+#main-nav ul {
    list-style: none;
    padding: 0;
    margin: 0;
 }
 
-#main-nav ul li a {
+#main-nav ul li a, #main-nav ul li summary {
    display: block;
    padding: 10px 0 10px 0;
    text-align: center;
    color: #626262;
+}
+
+#main-nav ul li a:hover, #main-nav ul li summary:hover {
+   cursor: pointer;
+   color: #9a2018;
+}
+
+#main-nav ul li details a {
+   font-size: 12px;
 }
 
 #main-nav ul li {
@@ -107,15 +143,41 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin-bottom: 40px;
 }
 
-   /* add */
-
-
-
 #logo {
    margin-bottom: 20px;
    max-width: 382px;
 }
 
+/* 3. ---Footer--- */
+
+#footer-hero {
+   background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+   color: #fff;
+   font-size: 12px;
+   margin-top: 40px;
+   padding-bottom: 80px;
+}
+
+#footer-hero h3 {
+   margin-top: 30px;
+   font-size: 28px;
+   margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+   font-size: 23px;
+}
+
+#footer-contact-info p {
+   margin-bottom: 20px;
+   line-height: 18px;
+   font-size: 11px;
+}
 
 /* 3. ---Main Hero Image--- */
 
@@ -158,12 +220,6 @@ so what this line is doing is when the main-nav input is checked, this style aff
 .hero-img-h2 span,  .hero-img-h3 span {
    color: #9a2018;
    font-size: 12px;
-}
-
-.line-separator {
-   margin-top: 20px;
-   border-top: solid 3px #CF6666;
-   padding-top: 20px;
 }
 
 #hero-summary p {
@@ -407,33 +463,75 @@ so what this line is doing is when the main-nav input is checked, this style aff
    align-self: flex-end;
 }
 
-/* 8. ---Footer--- */
+/* B. Spa Mobile */
+/* 1. Main Hero Image */
 
-#footer-hero {
-   background-image: url(../images/footer.jpg);
-	background-repeat: no-repeat;
-   color: #fff;
-   font-size: 12px;
-   margin-top: 40px;
-   padding-bottom: 80px;
+#spa-main-hero {
+   background-image: url(../images/mob_spa_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
 }
 
-#footer-hero h3 {
+#spa-hero-info p {
+   padding-top: 5px;
+}
+
+/* 2. Preparations */
+
+#spa-sect1-hero {
    margin-top: 30px;
-   font-size: 28px;
-   margin-bottom: 16px;
+   background-image: url(../images/mob_spa_sect1-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
 }
 
-#footer-privacy .line-seperator {
-   margin-top: 0px;
+#spa-sect1-info p {
+   margin-top: 5px;
 }
 
-#footer-contact-info h3 {
-   font-size: 23px;
+/* 3. Packages */
+
+#spa-sect2-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_spa_sect2-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
 }
 
-#footer-contact-info p {
-   margin-bottom: 20px;
-   line-height: 18px;
-   font-size: 11px;
+#spa-sect2-info p {
+   padding-top: 5px;
 }
+
+#mob-packages {
+   margin-top: 25px;
+}
+
+.mob-package-option {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+#spa-packages-sauna {
+   margin-top: 10px;
+   background-image: url(../images/mob_spa_wheel1.jpeg);
+   background-repeat: no-repeat;
+}
+
+#spa-sauna-info {
+   margin-top: 240px;
+}
+
+/* 4. Products */
+
+#spa-sect3-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_spa_sect3-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#spa-sect3-info p {
+   padding-top: 5px;
+   margin-bottom: 30px;
+}
+
