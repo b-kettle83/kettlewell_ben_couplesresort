@@ -4,6 +4,7 @@ Couples Resort Responsive Build
  */
 
 /* 
+
    CSS Guide 
 
    1.  General Styles
@@ -18,6 +19,10 @@ Couples Resort Responsive Build
    5.  Contact Form
 
    B. Spa Mobile
+   1. Main Hero Image
+   2. Preparations
+   3. Packages
+   4. Products
 
    C. Spa Desktop
    1. Main Nav
@@ -50,6 +55,27 @@ a {
    text-decoration: none;
 }
 
+h3 {
+   padding: 5px;
+   padding-left: 15px;
+   font-size: 21px;
+}
+
+span {
+   font-size: 14px;
+   color: #9a2018;
+}
+
+#mob p {
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+.mob-footnote {
+   font-size: 10px;
+   font-style: italic;
+}
+
 input, textarea {
    display: block;
    margin: 0;
@@ -61,6 +87,15 @@ span {
    font-size: 12px;
 }
 
+.mob-heading-box {
+   background-color: white;
+   align-self: last baseline;
+}
+
+.line-separator {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
 .cr-red {
    color: #9a2018;
 }
@@ -84,8 +119,6 @@ span {
    transform: rotate(90deg);
 }
 
-/* The ~ is a sibling selector. When two elements are on the same level in a parent container, they are siblings,
-so what this line is doing is when the main-nav input is checked, this style affects the sibling burger-con*/
 #main-nav input:checked ~ #burger-con {
    display:block;
 }
@@ -96,11 +129,20 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin: 0;
 }
 
-#main-nav ul li a {
+#main-nav ul li a, #main-nav ul li summary {
    display: block;
    padding: 10px 0 10px 0;
    text-align: center;
    color: #626262;
+}
+
+#main-nav ul li a:hover, #main-nav ul li summary:hover {
+   cursor: pointer;
+   color: #9a2018;
+}
+
+#main-nav ul li details a {
+   font-size: 12px;
 }
 
 #main-nav ul li {
@@ -135,6 +177,20 @@ so what this line is doing is when the main-nav input is checked, this style aff
    margin-top: 30px;
    font-size: 28px;
    margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+   font-size: 23px;
+}
+
+#footer-contact-info p {
+   margin-bottom: 20px;
+   line-height: 18px;
+   font-size: 11px;
 }
 
 #footer-privacy .line-seperator {
@@ -192,12 +248,6 @@ so what this line is doing is when the main-nav input is checked, this style aff
 .hero-img-h2 span,  .hero-img-h3 span {
    color: #9a2018;
    font-size: 12px;
-}
-
-.line-separator {
-   margin-top: 20px;
-   border-top: solid 3px #CF6666;
-   padding-top: 20px;
 }
 
 #hero-summary p {
@@ -439,6 +489,78 @@ so what this line is doing is when the main-nav input is checked, this style aff
    color: white;
    border: none;
    align-self: flex-end;
+}
+
+/* B. Spa Mobile */
+/* 1. Main Hero Image */
+
+#spa-main-hero {
+   background-image: url(../images/mob_spa_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#spa-hero-info p {
+   padding-top: 5px;
+}
+
+/* 2. Preparations */
+
+#spa-sect1-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_spa_sect1-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#spa-sect1-info p {
+   margin-top: 5px;
+}
+
+/* 3. Packages */
+
+#spa-sect2-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_spa_sect2-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#spa-sect2-info p {
+   padding-top: 5px;
+}
+
+#mob-packages {
+   margin-top: 25px;
+}
+
+.mob-package-option {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+#spa-packages-sauna {
+   margin-top: 10px;
+   background-image: url(../images/mob_spa_wheel1.jpeg);
+   background-repeat: no-repeat;
+}
+
+#spa-sauna-info {
+   margin-top: 240px;
+}
+
+/* 4. Products */
+
+#spa-sect3-hero {
+   margin-top: 30px;
+   background-image: url(../images/mob_spa_sect3-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#spa-sect3-info p {
+   padding-top: 5px;
+   margin-bottom: 30px;
 }
 
 /* C. Spa Desktop */

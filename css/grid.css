@@ -15,8 +15,8 @@ body, p, h1, h2, h3, h4, h5 {
 
  .grid-con { 
    display: grid;
-   grid-template-columns: repeat(4, 73px);
-   column-gap: 30px;
+   grid-template-columns: repeat(4, 80px);
+   column-gap: 20px;
    max-width: 412px;
    margin: 0 auto;
    padding-left: 15px;
