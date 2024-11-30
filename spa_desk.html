@@ -10,22 +10,26 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Welcome to The Spa</title>
 </head>
-<body>
+<body id="desk">
     <h1 class="hidden">Welcome to The Spa</h1>
         <!-- Main Nav -->         
             <header class="desk-grid-con" id="desk-main-header">
                 <div id="desk-main-nav-logo" class="col-start-1 col-span-3">
                     <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
                 </div>
-                <nav id="desk-main-nav" class="col-start-5 col-span-5">
+                <nav id="desk-main-nav" class="col-start-4 col-span-5">
                     <h2 class="hidden">Main Navigation</h2>
                     <div>
-                        <ul class="col-start-5 col-span-5">
+                        <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Spa</a></li>
-                            <li><a class = "selected" href="dining.html">Dining</a></li>
-                            <li><a href="#">Activites</a></li>
+                            <li><details>
+                                <summary>Spa</summary>
+                                <a href="spa_mob.html">About our Spa</a>
+                                <a href="package.html">Spa Packages</a>
+                            </details></li>
+                            <li><a href="#">Dining</a></li>
+                            <li><a href="activities.html">Activites</a></li>
                             <li><a href="#">Reservations</a></li>
                         </ul>
                     </div>
@@ -35,7 +39,7 @@
                 </div>
             </header>
 
-            <main id="desk">
+            <main>
             
                 <!--Hero Section-->
                 <section id="desk-main-hero" class="desk-grid-con">
@@ -204,7 +208,11 @@
                             <div>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="#">Rooms</a></li>
-                                <li><a href="#">Spa</a></li>
+                                <li><details>
+                                    <summary>Spa</summary>
+                                    <a href="spa_mob.html">About our Spa</a>
+                                    <a href="package.html">Spa Packages</a>
+                                </details></li>
                             </div>
                             <div>
                                 <li><a class = "selected" href="dining.html">Dining</a></li>
