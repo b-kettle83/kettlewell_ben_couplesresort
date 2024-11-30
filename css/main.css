@@ -38,6 +38,11 @@ Couples Resort Responsive Build
    3. Algonquin Park
    4. Galeairy Lake
 
+   E. Packages
+   1. Package Information
+   2. Policies
+   3. Packages
+
  */
 
 
@@ -869,3 +874,52 @@ span {
    padding-top: 10px;
 }
 
+/* E. Packages */
+/* 1. Package Information */
+
+#pack-main-hero {
+   background-image: url(../images/mob_pack_hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#pack-hero-title {
+   background-image: url(../images/mob_pack_mold.jpeg);
+   background-repeat: no-repeat;
+   height: 225px;
+}
+
+#pack-hero-info {
+   margin-top: 30px;
+}
+
+#pack-hero-title h2 {
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+#pack-sect1-hero {
+   margin-top: 20px;
+   background-image: url(../images/mob_pack_sect1-hero.jpeg);
+   background-repeat: no-repeat;
+   height: 210px;
+}
+
+#pack-sect1-info {
+   font-size: 10px;
+}
+
+#pack-packages-return {
+   text-align: center;
+   color: white;
+   background-color: #9a2018;
+   padding: 20px;
+   border-radius: 10px;
+   font-style: italic;
+   margin-bottom: 10px;
+}
+
+#pack-packages-return p {
+   margin: auto;
+   font-size: 15px;
+}
