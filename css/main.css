@@ -89,6 +89,7 @@ details li a:hover {
 #mob p {
    font-size: 14px;
    margin-bottom: 20px;
+   line-height: 22px;
 }
 
 .mob-footnote {
@@ -367,8 +368,10 @@ input, textarea {
 }
 
 #why-choose-us-bottom-nav ol {
+   display: flex;
+   justify-content: space-evenly;
    list-style-type: none;
-   margin: 0 0 0 20px;
+   margin: 0;
    padding: 0;
 }
 
