@@ -77,6 +77,15 @@ span {
    color: #9a2018;
 }
 
+summary:hover {
+   cursor: pointer;
+   color: #9a2018;
+}
+
+details li a:hover {
+   color: #9a2018;
+}
+
 #mob p {
    font-size: 14px;
    margin-bottom: 20px;
@@ -310,10 +319,12 @@ input, textarea {
 #why-choose-us-nav ul li a {
   color: inherit;
   padding: 5px;
+  transition: 0.1s ease-out;
 }
 
-#why-choose-us-nav ul li a.selected {
+#why-choose-us-nav ul li a:hover {
    border-left: #9a2018 solid 5px;
+   transition: 0.1s ease-out;
  }
 
 #why-choose-us-hero-con {
@@ -370,6 +381,14 @@ input, textarea {
    color: #fff;
 }
 
+#why-choose-us-bottom-nav ol li a:hover {
+   text-decoration: underline;
+}
+
+#hot-tub a:hover {
+   color: #9a2018;
+}
+
 
 /* 4. ---About & FAQ--- */
 
@@ -416,7 +435,7 @@ input, textarea {
    margin-bottom: 16px;
 }
 
-.faq-items h3 {
+.faq-items h3, .faq-items summary {
    background: #e8e7e7;
    padding: 16px;
    font-size: 16px;
@@ -438,7 +457,7 @@ input, textarea {
    font-size: 13px;
 }
 
-#faq-text-con {
+.faq-text-con {
    margin-top: 20px;
    margin-bottom: 20px;
 }
@@ -471,6 +490,7 @@ input, textarea {
 
 #contact-hero-address h3 {
    margin-bottom: 25px;
+   padding-left: 0px;
 }
 
 #contact-hero-form form {
@@ -488,6 +508,49 @@ input, textarea {
    width: auto;
 }
 
+#hm-newsletter {
+   display: flex;
+   align-items: last baseline;
+}
+
+#hm-newsletter span {
+   font-size: 20px;
+   font: inherit;
+   color: inherit;
+}
+
+#hm-newsletter input[type=checkbox] {
+   margin-right: 20px;
+}
+
+#hm-newsletter input[type=checkbox]:checked + span::after {
+   content: "\2764";
+   color: #9a2018;
+   font-size: 15px;
+   margin-left: 10px;
+   animation: fadeIn 1s;
+   opacity: 1;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0}
+   100% {opacity: 1}
+}
+
+#hm-newsletter input[type="checkbox"]:not(:checked) + span::after {
+   content: "\2764";
+   color: #9a2018;
+   font-size: 15px;
+   margin-left: 10px;
+   animation: fadeOut 1s;
+   opacity: 0;
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1}
+   100% {opacity: 0}
+}
+
 #contact-hero-form textarea {
    height: 250px;
 }
@@ -498,7 +561,51 @@ input, textarea {
    color: white;
    border: none;
    align-self: flex-end;
+   transition: 0.2s ease-out;
 }
+
+#contact-hero-form input[type=submit]:hover {
+   background-color: #CF6666;
+   transition: 0.2s ease-out;
+   cursor: pointer;
+}
+
+#contact-hero-form input[type=submit]:target {
+   animation: grow 1s ease-in-out;
+}
+
+/*
+#test {
+   padding: 12px 28px;
+   background-color: #9a2018;
+   color: white;
+   border: none;
+   align-self: flex-end;
+   transition: 0.2s ease-out;
+}
+
+#test a {
+   text-align: center;
+   color: white;
+}
+
+#test:hover {
+   background-color: #CF6666;
+   transition: 0.2s ease-out;
+   cursor: pointer;
+}
+
+#test:target {
+   animation: grow 1s ease-in-out;
+}
+
+@keyframes grow {
+   0% {transform: scale(1);}
+   50% {transform: scale(2);}
+   100% {transform: scale(1);}
+}
+
+*/
 
 /* B. Spa Mobile */
 /* 1. Main Hero Image */
@@ -543,13 +650,22 @@ input, textarea {
    margin-top: 25px;
 }
 
+#mob-packages div a {
+   color:#626262;
+}
+
 .mob-package-option {
    text-align: center;
    margin-bottom: 30px;
 }
 
+.mob-package-option:hover {
+   filter: grayscale(100%);
+   cursor: pointer;
+}
+
 #spa-packages-sauna {
-   margin-top: 10px;
+   margin-top: 50px;
    background-image: url(../images/mob_spa_wheel1.jpeg);
    background-repeat: no-repeat;
 }
@@ -634,17 +750,25 @@ input, textarea {
 
 #desk-main-nav-logo {
    border-right: grey solid 3px;
-   padding-right: 50px
+   padding-right: 50px;
+   margin: 30px 0px
 }
 
 #desk-main-header-booknow {
    text-align: center;
-   align-items: center;
+   align-content: center;
    font-size: 24px;
    font-style: italic;
    color:white;
    background-color: #9a2018;
-   padding: 35px 10px;
+   transition: 0.5s ease-in-out;
+   height: 100%;
+}
+
+#desk-main-header-booknow:hover {
+   background-color: rgb(196, 28, 28);
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
 }
 
 /* 2. --Main Hero-- */
@@ -804,9 +928,16 @@ input, textarea {
    font-size: 24px;
    font-style: italic;
    background-color: #9a2018;
+   transition: 0.5s ease-in-out;
    padding: 40px 10px;
    border-radius: 5px;
    margin-bottom: 50px;
+}
+
+#desk-footer-book-now:hover {
+   background-color: rgb(196, 28, 28);
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
 }
 
 #desk-footer-legal p {
@@ -847,12 +978,19 @@ input, textarea {
 
 .learn-more {
    color: white;
-   background-color: #CF6666;
+   background-color: #9a2018;
    padding: 10px;
    border-radius: 10px;
    font-style: italic;
    width: 100px;
    align-self: center;
+   transition: 0.2s ease-out;
+}
+
+.learn-more:hover {
+   background-color: #CF6666;
+   transition: 0.2s ease-out;
+   cursor: pointer;
 }
 
 .act-activity-box img {
@@ -932,9 +1070,15 @@ input, textarea {
    border-radius: 10px;
    font-style: italic;
    margin-bottom: 10px;
+   transition: 0.2s ease-out;
 }
 
 #pack-packages-return p {
    margin: auto;
    font-size: 15px;
+}
+
+#pack-packages-return:hover {
+   transition: 0.2s ease-out;
+   background-color: #CF6666;
 }
