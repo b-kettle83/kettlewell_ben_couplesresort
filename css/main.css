@@ -900,15 +900,16 @@ input, textarea {
 }
 
 #desk-footer-book-now {
+   display: flex;
    align-self: center;
    text-align: center;
    font-size: 24px;
    font-style: italic;
    background-color: #9a2018;
    transition: 0.5s ease-in-out;
-   padding: 40px 10px;
    border-radius: 5px;
    margin-bottom: 50px;
+   height: 120px;
 }
 
 #desk-footer-book-now:hover {
@@ -918,7 +919,12 @@ input, textarea {
 }
 
 #desk-footer-book-now a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    color: white;
+   height: 100%;
+   width: 100%;
 }
 
 /* Footer book now button animation */
