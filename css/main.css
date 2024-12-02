@@ -564,51 +564,20 @@ input, textarea {
    color: white;
    border: none;
    align-self: flex-end;
-   transition: 0.2s ease-out;
 }
 
 #contact-hero-form input[type=submit]:hover {
    background-color: #CF6666;
-   transition: 0.2s ease-out;
    cursor: pointer;
+   animation: shake 0.5s ease-in-out;
 }
 
-#contact-hero-form input[type=submit]:target {
-   animation: grow 1s ease-in-out;
+@keyframes shake {
+   0% {transform: rotate(0deg);}
+   25% {transform: rotate(10deg);}
+   75% {transform: rotate(-10deg);}
+   100% {transform: rotate(0deg);}
 }
-
-/*
-#test {
-   padding: 12px 28px;
-   background-color: #9a2018;
-   color: white;
-   border: none;
-   align-self: flex-end;
-   transition: 0.2s ease-out;
-}
-
-#test a {
-   text-align: center;
-   color: white;
-}
-
-#test:hover {
-   background-color: #CF6666;
-   transition: 0.2s ease-out;
-   cursor: pointer;
-}
-
-#test:target {
-   animation: grow 1s ease-in-out;
-}
-
-@keyframes grow {
-   0% {transform: scale(1);}
-   50% {transform: scale(2);}
-   100% {transform: scale(1);}
-}
-
-*/
 
 /* B. Spa Mobile */
 /* 1. Main Hero Image */
@@ -941,6 +910,20 @@ input, textarea {
    background-color: rgb(196, 28, 28);
    transition: 0.5s ease-in-out;
    cursor: pointer;
+}
+
+#desk-footer-book-now a {
+   color: white;
+}
+
+#desk-footer-book-now:target {
+   animation: scale-up-down 0.4s ease-in-out;
+}
+
+@keyframes scale-up-down {
+   0% {transform: scale(1);}
+   50% {transform: scale(1.2);}
+   100% {transform: scale(1);}
 }
 
 #desk-footer-legal p {
